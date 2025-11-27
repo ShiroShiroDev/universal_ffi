@@ -4,10 +4,10 @@ library universal_ffi_helper;
 import 'ffi.dart';
 import 'ffi_utils.dart';
 import 'src/wasm_ffi/_ffi_helper.dart'
-    if (dart.library.ffi) 'src/dart_ffi/_ffi_helper.dart';
+    if (dart.library.io) 'src/dart_ffi/_ffi_helper.dart';
 
 export 'src/wasm_ffi/_ffi_helper.dart'
-    if (dart.library.ffi) 'src/dart_ffi/_ffi_helper.dart' show appType;
+    if (dart.library.io) 'src/dart_ffi/_ffi_helper.dart' show appType;
 
 /// The type of the current app.
 ///
